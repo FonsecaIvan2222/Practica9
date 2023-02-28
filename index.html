@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#a2bb16 ;
+    color: #5b0b0b;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #F5DEB3;
+    color: #000080;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #F5DEB3;
+    padding: 15px;
+    color: #000080;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #47edff;
+    color: #0b0b0b;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+</style>
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Unidad 2</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://fonsecaivan2222.github.io/practica1/">Practica 1</a></li>
+    <li><a href="https://fonsecaivan2222.github.io/WebLineaDelTiempo/">Practica 2</a></li>
+    <li><a href="ttps://fonsecaivan2222.github.io/ListFac/">Practica 3</a></li>
+    <li><a href="https://fonsecaivan2222.github.io/FormularioCSS/">Practica 4</a></li>
+    <li><a href="https://fonsecaivan2222.github.io/FormularioCSS/">Practica 5</a></li>
+    <li><a href="https://fonsecaivan2222.github.io/CVpersonal/">Practica 6</a></li>
+    <li><a href="https://fonsecaivan2222.github.io/GaleriaDeCiudades/Ln.html">Practica 7</a></li>
+    <li><a href="https://fonsecaivan2222.github.io/Practica8/">Practica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <h1>La ciudad</h1>
+  <video width="200" height="200" src="VideoCV.mp4 "controls></video><br>
+  <iframe src="https://www.google.com/maps/embed?pb=!4v1676945511844!6m8!1m7!1s4_kGjA8IIG6RSVh0d2NFMw!2m2!1d18.82266579094466!2d-97.08632788187415!3f167.02557548499357!4f4.993621268887523!5f0.7820865974627469" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <h3>Datos</h3> 
+  <h4>Datos Personales</h4>
+      <Label>*Nombre Completo:Fonseca Ramos Ivan</Label><br>
+      <Label>*Fecha de nacimiento:22/06/2002</Label><br>
+      <Label>*Lugar de nacimiento:Orizaba.Ver</Label><br>
+      <h4>Formacion Academica</h4>
+      <Label>*2014-2017:Escuela secundaria tecnica industrial NO.4</Label><br>
+      <Label>*2017-2020:CBTIS 142</Label><br>
+      <Label>*2020-...:Instituto Tecnologico de Orizaba</Label><br>
+      <h4>Experiencia Laboral </h4>
+      <Label>*NINGUNA</Label><br>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <img src="Minecraf.jpeg" alt="Ejemplo de imagen">
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
